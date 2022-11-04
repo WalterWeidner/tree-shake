@@ -1,0 +1,20 @@
+{
+	"name": "vite-app",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"babel-lib": "1.0.0",
+		"esbuild-lib": "1.0.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"vite-lib": "1.0.0",
+		"webpack-lib": "1.0.0"
+	},
+	"devDependencies": {
+		"vite": "3.2.2"
+	},
+	"scripts": {
+		"build": "vite build"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "webpack-app",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"babel-lib": "1.0.0",
+		"esbuild-lib": "1.0.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"vite-lib": "1.0.0",
+		"webpack-lib": "1.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "7.19.6",
+		"@babel/plugin-transform-runtime": "7.19.6",
+		"@babel/preset-env": "7.19.4",
+		"@babel/preset-react": "7.18.6",
+		"@babel/preset-typescript": "7.18.6",
+		"babel-loader": "9.0.1",
+		"webpack": "5.74.0",
+		"webpack-cli": "4.10.0"
+	},
+	"scripts": {
+		"build": "webpack"
+	}
+}

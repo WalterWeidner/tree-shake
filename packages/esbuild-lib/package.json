@@ -1,0 +1,22 @@
+{
+	"name": "esbuild-lib",
+	"version": "1.0.0",
+	"main": "./dist/index.js",
+	"files": [
+		"dist/"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"devDependencies": {
+		"esbuild": "0.15.13"
+	},
+	"scripts": {
+		"build": "node ./build"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"exports": "./dist/index.js"
+}
