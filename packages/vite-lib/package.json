@@ -17,6 +17,5 @@
 		"build": "vite build"
 	},
 	"sideEffects": false,
-	"type": "module",
 	"exports": "./dist/index.js"
 }

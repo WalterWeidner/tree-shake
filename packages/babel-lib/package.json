@@ -20,6 +20,5 @@
 		"build": "babel src --out-dir dist --ignore '**/*.d.ts' --extensions '.js,.jsx,.ts,.tsx'"
 	},
 	"sideEffects": false,
-	"type": "module",
 	"exports": "./dist/index.js"
 }

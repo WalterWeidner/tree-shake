@@ -6,7 +6,13 @@ export default defineConfig({
 		lib: {
 			entry: resolve(__dirname, 'src/index.tsx'),
 			fileName: 'index',
-			formats: ['es'],
+			formats: ['cjs'],
 		},
+		commonjsOptions: {
+			include: [/babel-lib/, /esbuild-lib/, /node_modules/, /vite-lib/, /webpack-lib/],
+		},
+	},
+	optimizeDeps: {
+		include: [/babel-lib/, /esbuild-lib/, /vite-lib/, /webpack-lib/],
 	},
 });

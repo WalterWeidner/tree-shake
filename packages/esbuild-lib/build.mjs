@@ -8,8 +8,7 @@ esbuild
 		bundle: true,
 		sourcemap: true,
 		minify: false,
-		splitting: true,
-		format: 'esm',
+		format: 'cjs',
 		define: { global: 'window' },
 		target: ['es2020'],
 	})

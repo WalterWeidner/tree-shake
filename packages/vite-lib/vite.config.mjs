@@ -6,7 +6,7 @@ export default defineConfig({
 		lib: {
 			entry: resolve(__dirname, 'src/index.js'),
 			fileName: 'index',
-			formats: ['es'],
+			formats: ['cjs'],
 		},
 	},
 });

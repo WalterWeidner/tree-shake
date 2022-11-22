@@ -14,9 +14,8 @@
 		"esbuild": "0.15.13"
 	},
 	"scripts": {
-		"build": "node ./build"
+		"build": "node ./build.mjs"
 	},
 	"sideEffects": false,
-	"type": "module",
 	"exports": "./dist/index.js"
 }
