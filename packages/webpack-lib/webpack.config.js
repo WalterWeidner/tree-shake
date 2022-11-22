@@ -11,7 +11,7 @@ export default {
 		rules: [
 			{
 				include: path.resolve(__dirname, './src'),
-				test: /\.(js|ts|tsx)$/,
+				test: /\.(js|jsx|ts|tsx)$/,
 				use: ['babel-loader'],
 			},
 		],
@@ -35,6 +35,7 @@ export default {
 	experiments: {
 		outputModule: true,
 	},
+	externals: ['react', 'react-dom'],
 	devtool: false,
 	target: 'es2020',
 };

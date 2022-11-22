@@ -6,20 +6,22 @@
 		"dist/"
 	],
 	"license": "MIT",
-	"dependencies": {
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@babel/cli": "7.19.3",
 		"@babel/core": "7.19.6",
 		"@babel/preset-env": "7.19.4",
-		"@babel/preset-react": "7.18.6"
+		"@babel/preset-react": "^7.18.6"
 	},
 	"scripts": {
+		"prebuild": "rm -rf ./dist",
 		"build": "babel src --out-dir dist --ignore '**/*.d.ts' --extensions '.js,.jsx,.ts,.tsx'"
 	},
 	"sideEffects": false,
 	"type": "module",
-	"exports": "./dist/index.js"
+	"exports": "./dist/index.js",
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
 }

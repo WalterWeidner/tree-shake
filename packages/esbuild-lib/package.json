@@ -6,17 +6,19 @@
 		"dist/"
 	],
 	"license": "MIT",
-	"dependencies": {
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"esbuild": "0.15.13"
 	},
 	"scripts": {
+		"prebuild": "rm -rf ./dist",
 		"build": "node ./build"
 	},
 	"sideEffects": false,
 	"type": "module",
-	"exports": "./dist/index.js"
+	"exports": "./dist/index.js",
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
 }
