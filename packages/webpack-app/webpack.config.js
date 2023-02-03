@@ -16,6 +16,18 @@ module.exports = {
 				test: /\.(ts|tsx)$/,
 				use: ['babel-loader'],
 			},
+			{
+				test: /\.css$/i,
+				use: [
+					'style-loader',
+					{
+						loader: 'css-loader',
+						options: {
+							modules: true,
+						},
+					},
+				],
+			},
 		],
 	},
 	output: {
@@ -23,6 +35,6 @@ module.exports = {
 		path: path.resolve(__dirname, './dist'),
 	},
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js', '.jsx'],
+		extensions: ['.tsx', '.ts', '.js', '.jsx', '.css'],
 	},
 };

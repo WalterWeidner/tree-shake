@@ -4,7 +4,8 @@
 	"main": "dist/index.js",
 	"license": "MIT",
 	"devDependencies": {
-		"rollup": "^3.13.0"
+		"rollup": "^3.13.0",
+		"rollup-plugin-postcss": "^4.0.2"
 	},
 	"scripts": {
 		"build": "rollup -c"

@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"build": "yarn workspaces run build && echo \"WEBPACK\n\" && cat ./packages/webpack-app/dist/index.js && echo \"\n\n\nVITE\n\" && cat ./packages/vite-app/dist/index.mjs"
+		"build": "yarn workspaces run build"
 	},
 	"workspaces": [
 		"packages/babel-lib",
