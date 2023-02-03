@@ -8,6 +8,7 @@
 		"esbuild-lib": "1.0.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
+		"rollup-lib": "1.0.0",
 		"vite-lib": "1.0.0",
 		"webpack-lib": "1.0.0"
 	},

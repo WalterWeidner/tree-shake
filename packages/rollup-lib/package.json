@@ -1,0 +1,12 @@
+{
+	"name": "rollup-lib",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"rollup": "^3.13.0"
+	},
+	"scripts": {
+		"build": "rollup -c"
+	}
+}
