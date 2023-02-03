@@ -1,12 +1,3 @@
-import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
-export default defineConfig({
-	build: {
-		lib: {
-			entry: resolve(__dirname, 'src/index.tsx'),
-			fileName: 'index',
-			formats: ['es'],
-		},
-	},
-});
+export default defineConfig({});
