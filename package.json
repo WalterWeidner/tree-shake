@@ -13,6 +13,7 @@
 		"packages/babel-lib",
 		"packages/esbuild-lib",
 		"packages/vite-lib",
+		"packages/rollup-lib",
 		"packages/webpack-lib",
 		"packages/webpack-app",
 		"packages/vite-app"
