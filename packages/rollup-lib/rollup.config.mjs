@@ -1,4 +1,5 @@
 import postcss from 'rollup-plugin-postcss';
+import styles from 'rollup-plugin-styles';
 
 export default {
 	input: 'src/index.mjs',
@@ -7,7 +8,10 @@ export default {
 		format: 'es',
 	},
 	plugins: [
-		postcss({
+		// postcss({
+		// 	modules: true,
+		// }),
+		styles({
 			modules: true,
 		}),
 	],

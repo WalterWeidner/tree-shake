@@ -1,7 +1,8 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-	entry: path.resolve(__dirname, './src/index.tsx'),
+	entry: path.resolve(__dirname, './src/index.ts'),
 	mode: 'production',
 	devtool: 'source-map',
 	// optimization: {
@@ -13,7 +14,7 @@ module.exports = {
 		rules: [
 			{
 				include: path.resolve(__dirname, './src'),
-				test: /\.(ts|tsx)$/,
+				test: /\.(ts)$/,
 				use: ['babel-loader'],
 			},
 			{
@@ -34,6 +35,12 @@ module.exports = {
 		filename: 'index.js',
 		path: path.resolve(__dirname, './dist'),
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			filename: path.resolve('./dist/index.html'),
+			template: path.resolve('./src/index.html'),
+		}),
+	],
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js', '.jsx', '.css'],
 	},

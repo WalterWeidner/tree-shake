@@ -14,6 +14,20 @@ export default {
 				test: /\.(js|ts|tsx)$/,
 				use: ['babel-loader'],
 			},
+			{
+				test: /\.css$/i,
+				use: [
+					// Creates `style` nodes from JS strings
+					'style-loader',
+					// Translates CSS into CommonJS
+					{
+						loader: 'css-loader',
+						options: {
+							modules: true,
+						},
+					},
+				],
+			},
 		],
 	},
 	optimization: {
