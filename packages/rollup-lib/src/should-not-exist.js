@@ -1,3 +1,6 @@
+import classes from './should-not-exist.css';
+
 export function shouldNotExist() {
-	console.log('Vite Build - Should not exist!');
+	console.log(classes.rollupShouldNotExist);
+	console.log('Rollup Build - Should not exist!');
 }
